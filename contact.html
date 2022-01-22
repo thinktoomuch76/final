@@ -84,21 +84,23 @@
                 <i class="fa fa-instagram" style="width:30px"></i>thinktoomuch76<br>
             </div>
             <div class="w3-col m6">
-                <form name="表單" method="POST">
+                <form name="表單" method="post" action="mailto:ntunhs091d12018@altmails.com" enctype="text/plain">
                     
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="w3-half">
                             <!-- input方塊 -->
-                            <input class="w3-input w3-border" type="text" placeholder="姓名" name="姓名" required>
+                            <input class="w3-input w3-border" id="姓名" type="text" placeholder="姓名" name="姓名" required>
                         </div>
                         <div class="w3-half">
                             <!-- input方塊 -->
-                            <input class="w3-input w3-border" type="email" placeholder="Email" name="Email" required>
+                            <input class="w3-input w3-border" id="主旨" type="text" placeholder="主旨" name="主旨" required>
                         </div>
                     </div>
-                    <input class="w3-input w3-border" type="text" placeholder="訊息" name="訊息" required>
+                    <input class="w3-input w3-border" id="Email" type="email" placeholder="Email" name="Email" required>
+                    <input class="w3-input w3-border" id="訊息" cols="40" rows="10"  aria-required="true" aria-invalid="false" type="text" placeholder="訊息" name="訊息" required>
                     <div id="form_alerts"></div>
                     <button class="w3-button w3-black w3-section w3-right" type="submit">送出</button>
+                    <a id="mailTo"></a>
                 </form>
             </div>
         </div>
